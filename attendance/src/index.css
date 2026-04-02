@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Sora:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: 16 24 40;
+    --ink-muted: 86 102 130;
+    --brand: 37 99 235;
+    --brand-2: 16 185 129;
+    --glass: 255 255 255;
+    --line: 226 232 240;
+  }
+
+  html {
+    font-family: "Sora", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+
+  body {
+    @apply text-slate-900 antialiased;
+    background:
+      radial-gradient(1000px 500px at 10% -10%, rgba(59, 130, 246, 0.18), transparent 60%),
+      radial-gradient(900px 500px at 110% 0%, rgba(16, 185, 129, 0.18), transparent 60%),
+      #f8fafc;
+  }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+    letter-spacing: 0.2px;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur border border-slate-200 shadow-sm rounded-2xl;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-semibold text-slate-900;
+  }
+
+  .subtle-text {
+    @apply text-sm text-slate-500;
+  }
+
+  .primary-btn {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2 text-white bg-slate-900 hover:bg-slate-800 transition;
+  }
+
+  .ghost-btn {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2 text-slate-900 border border-slate-300 hover:border-slate-400 hover:bg-white/70 transition;
+  }
+
+  .table-head {
+    @apply bg-slate-100 text-slate-700 text-sm font-semibold;
+  }
+
+  .card-hover {
+    @apply transition hover:-translate-y-1 hover:shadow-lg;
+  }
+}
