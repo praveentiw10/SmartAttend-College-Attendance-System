@@ -1,4 +1,4 @@
-<div id="top"></div>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -128,7 +128,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/manishkumar-hub/College-Attendance-Management-System
+   git clone https://github.com/praveentiw10/SmartAttend-College-Attendance-System
    ```
 2. Install NPM packages inside both folders 
    ```sh
